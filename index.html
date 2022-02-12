@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Object</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: blueviolet;
+
+    }
+
+    .blockBox {
+        height: 168px;
+        width: 168px;
+        background-color: rgb(226, 149, 149);
+        margin: 10px;
+        display: inline-block;
+    }
+
+    .imgBox {
+        height: 168px;
+        width: 168px;
+        position: relative;
+        background-image: url('/nasir.jpg');
+        cursor: pointer;
+    }
+
+    .hold {
+        border: solid brown 4px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .dashed {
+
+        background: rgb(214, 206, 206);
+        border-style: dashed;
+
+    }
+</style>
+
+<body>
+
+    <div class="blockBox">
+        <div class="imgBox" draggable="true"> </div>
+    </div>
+    <div class="blockBox"></div>
+    <div class="blockBox"></div>
+    <div class="blockBox"></div>
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
